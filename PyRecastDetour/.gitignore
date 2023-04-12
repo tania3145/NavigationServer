@@ -1,0 +1,12 @@
+*.obj
+test.py
+test_02.py
+benchmark_bake.py
+benchmark_pathfind.py
+test_load.py
+__pycache__
+*.pyc
+issues
+*.bin
+*.txt
+*.mtl
