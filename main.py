@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 class UVTConvertor:
     def __init__(self):
-        (self.easting, self.northing, self.zone_number, self.zone_letter) = utm.from_latlon(45.74648651703219, 21.22946578527367)
+        (self.easting, self.northing, self.zone_number, self.zone_letter) = utm.from_latlon(45.74666101971023, 21.230468210382533)
 
     def three_d_space_to_lat_lng(self, point):
         (lat, lng) = utm.to_latlon(self.easting + point[0], self.northing - point[2], self.zone_number, self.zone_letter)
@@ -26,12 +26,15 @@ def compute_path(start, end):
     start = convertor.lat_lng_to_three_d_space(*start)
     end = convertor.lat_lng_to_three_d_space(*end)
     navmesh = rd.Navmesh()
-    navmesh.load_navmesh("Data/navmesh-test2.bin")
+    navmesh.load_navmesh("Data/uvt-raw.bin")
     path = navmesh.pathfind_straight(start, end)
     return list(map(lambda p: convertor.three_d_space_to_lat_lng(p), path))
 
 
 def plot_path_on_map(path):
+    if len(path) <= 0:
+        return
+
     color_scale = [(0, 'orange'), (1, 'red')]
 
     data = list(zip(*path))
@@ -63,8 +66,8 @@ def plot_path_on_map(path):
 
 @app.route('/')
 def get_path():
-    start = (-3.3, 0, -10.23)
-    end = (-3.4, 4.5, 18.31)
+    start = (-50, 0, -50)
+    end = (85, 0, -5)
     convertor = UVTConvertor()
     path = compute_path(convertor.three_d_space_to_lat_lng(start), convertor.three_d_space_to_lat_lng(end))
     plot_path_on_map(path)
