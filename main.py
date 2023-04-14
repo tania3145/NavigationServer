@@ -19,10 +19,7 @@ def get_path():
     start = LatLng(*parse_location_arg(start))
     end = LatLng(*parse_location_arg(end))
 
-    # start, end = LatLng(45.747099, 21.229815, 0), LatLng(45.746722, 21.231551, 0)
-
     path = UVT_BUILDING.compute_path(start, end)
-    # plot_path_on_map(path)
     return json.dumps(list(map(lambda p: p.to_tuple(), path)))
 
 
