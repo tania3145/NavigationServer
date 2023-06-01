@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 from src.conversions import *
 
-NAVMESH_BIN_FILE = 'Data/uvt-raw.bin'
+NAVMESH_BIN_FILE = 'Data/uvt_parter_navmesh.bin'
 ROOM_POI_FILE = 'Data/RoomsMetadata.csv'
 
 
@@ -43,10 +43,11 @@ class Building:
                 for coo in row[1:]:
                     coo_data = parse_csv_tuple(coo)
                     # TODO: blender does something really strange so we have to convert to RecastNavMeshPoint
-                    coo_data = RecastNavMeshPoint(coo_data).to_blender_point().to_lat_lng().to_tuple()
+                    coo_data = BlenderPoint(coo_data).to_lat_lng().to_tuple()
                     row_data.append(coo_data)
                 # TODO: blender order is triangle draw so we have to swap the last 2 rows
-                row_data[2], row_data[3] = row_data[3], row_data[2]
+                if len(row_data) == 4:
+                    row_data[2], row_data[3] = row_data[3], row_data[2]
                 rooms.append(Room(str(row[0]), str(row[0]), row_data))
         return Building(navmesh, rooms)
 
@@ -59,6 +60,7 @@ class Building:
         start = start.to_blender_point().to_recast_nav_mesh_point().to_tuple()
         end = end.to_blender_point().to_recast_nav_mesh_point().to_tuple()
         path = self.navmesh.pathfind_straight(start=start, end=end)
+        path += [end]
 
         return list(map(lambda p: RecastNavMeshPoint(p).to_blender_point().to_lat_lng(), path))
 

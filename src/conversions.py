@@ -48,7 +48,8 @@ class UTM:
         return self.easting, self.northing, self.zone_number, self.zone_letter, self.level
 
 
-UVT_ZERO_POINT_LAT_LNG = LatLng(45.74666101971023, 21.230468210382533)
+# UVT_ZERO_POINT_LAT_LNG = LatLng(45.74666101971023, 21.230468210382533)
+UVT_ZERO_POINT_LAT_LNG = LatLng(45.7467, 21.2305)
 UVT_ZERO_POINT_UTM = UVT_ZERO_POINT_LAT_LNG.to_utm()
 
 

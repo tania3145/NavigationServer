@@ -5,6 +5,7 @@ from src.conversions import *
 app = Flask(__name__)
 
 
+# LatLng arguments
 @app.route('/path', methods=['GET'])
 def get_path():
     def parse_location_arg(arg):

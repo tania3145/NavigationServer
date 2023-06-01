@@ -4,11 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60508062-2d4e-4a26-a89c-551bbff861a2" name="Changes" comment="" />
+    <list default="true" id="60508062-2d4e-4a26-a89c-551bbff861a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Data/Blender File/plan_uvt_parter.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Blender File/plan_uvt_parter.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/plan_uvt_parter.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/uvt_parter_navmesh.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/uvt_parter_navmesh2.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/GOOGLE_SAT_WM.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/GOOGLE_SAT_WM.wld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/RoomsMetadata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/RoomsMetadata.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/RoomsMetadata2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/UVT_STUFF.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/UVT_STUFF.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/UVT_STUFF.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/UVT_STUFF.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/abcd.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/abcd.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/abcd.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/abcd.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/cccc.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/cccc.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/cccc.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/cccc.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/navmesh-test.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/navmesh-test2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/test.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/test.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/test2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/test2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt-raw.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_gis.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw2.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/uvt_plan_raw2.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../serviceAccountKey.json" beforeDir="false" afterPath="$PROJECT_DIR$/../serviceAccountKey.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/building.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/building.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/conversions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../src/conversions.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -21,7 +71,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Projects/NavigationServer/PyRecastDetour",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Projects/NavigationServer/NavmeshExplorer",
     "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
