@@ -32,12 +32,15 @@ def get_poi():
 
 @app.route('/posts', methods=['GET'])
 def get_posts():
-    user = FacebookFeed.get_profile()
-    posts = FacebookFeed.get_posts()
-    return json.dumps({
-        'user': user,
-        'posts': posts
-    })
+    try:
+        user = FacebookFeed.get_profile()
+        posts = FacebookFeed.get_posts()
+        return json.dumps({
+            'user': user,
+            'posts': posts
+        })
+    except Exception as e:
+        return str(e), 500
 
 
 if __name__ == '__main__':
