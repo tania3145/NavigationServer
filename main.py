@@ -1,6 +1,7 @@
 from flask import Flask, request
 from src.building import UVT_BUILDING
 from src.conversions import *
+from src.facebook_service import FacebookFeed
 
 app = Flask(__name__)
 
@@ -27,6 +28,16 @@ def get_path():
 @app.route('/poi', methods=['GET'])
 def get_poi():
     return json.dumps(UVT_BUILDING.rooms, default=vars)
+
+
+@app.route('/posts', methods=['GET'])
+def get_posts():
+    user = FacebookFeed.get_profile()
+    posts = FacebookFeed.get_posts()
+    return json.dumps({
+        'user': user,
+        'posts': posts
+    })
 
 
 if __name__ == '__main__':
